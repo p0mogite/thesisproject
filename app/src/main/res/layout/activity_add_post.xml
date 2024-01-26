@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_location"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="60dp"
+                android:hint="Location">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:numStars="5"
+                android:stepSize="0.5" />
+
+            <!-- Location -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_post"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="Post">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Upload Image Button -->
+            <Button
+                android:id="@+id/button_upload_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Upload Image"
+                android:textColor="@android:color/white"
+                />
+
+
+            <ImageView
+                android:id="@+id/pictureImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@color/purple_200"
+                />
+            <Button
+                android:id="@+id/button_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Post"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

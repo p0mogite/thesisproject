@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="1500dp"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="272dp"
+            app:srcCompat="@drawable/burana_tower" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="emailAddress"
+                android:ems="10"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Password"
+                android:ems="10"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Confirm">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSConfPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Password"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSSigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#757575"
+            android:text="@string/signed"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvRedirectLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="@string/already_have_an_account_login"
+            android:textColor="#18206F"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

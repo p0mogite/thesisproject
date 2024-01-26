@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">finaldemo</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm</string>
+    <string name="signed">sign up</string>
+    <string name="already_have_an_account_login">already have an account</string>
+    <string name="login">login</string>
+    <string name="don_t_have_an_account_sign_in">do not have an account</string>
+
+</resources>
